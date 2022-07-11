@@ -1,0 +1,258 @@
+.movie {
+	color: rgb(213, 212, 236);
+	margin-left: auto;
+	margin-right: auto;
+	resize: none;
+}
+
+.movie-content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:space-around;
+}
+
+.movie-content > div {
+    margin:25px;
+}
+
+.btn-block{
+	width: 60%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	color: #cae3d3;
+	border-radius: 20px;
+}
+
+#content {
+	background-image: url("../static/bg_image.jpg");
+	background-repeat: no-repeat;
+	background-color: #181818;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+#details {
+	margin-left: 50px;
+}
+
+.footer {
+	color: #e4e0e0;
+	text-align:right;
+	position: fixed;
+ 	bottom: 20px;
+ 	right: 20px;
+ 	width: 100%;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #E93978;
+	font-size: 56px;
+	-webkit-text-stroke-width: 1px;
+  	-webkit-text-stroke-color: rgb(255, 255, 255);
+    font-weight: bold;
+    margin-top: 35px;
+ }
+
+.github-corner:hover .octo-arm {
+  	animation: octocat-wave 560ms ease-in-out;
+}
+
+#autoComplete {
+  background-position: 97% ;
+}
+
+#name {
+	color: white;
+	padding: 1px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h2{
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-size: 48px;
+}
+
+h6 {
+    margin-bottom: 20px; 
+	font-size: 20px; 
+}
+
+@media only screen and (max-width: 650px) {
+    #mcontent {
+      display: block;
+    }
+    .poster-lg {
+      display: none;
+    }
+    #details {
+		margin-left: 30px;
+	}
+    #loader {
+		display: none;
+		position: fixed;
+		z-index: 100;
+		left: 0;
+		top:0;
+		width: 100%;
+		height: 100%;
+		background-image: url("../static/loading.gif");
+		background-size: 40%;
+		background-position: 50% 50%;
+		background-color: rgb(211, 230, 198);
+		background-repeat: no-repeat;
+		-webkit-transition: background-image 0.3s ease-in-out;
+		transition: background-image 0.2s ease-in-out;
+	}
+
+	#loader-text {
+		vertical-align: middle;
+		color:white;
+	}
+
+	#autoComplete {
+	  background-position: 97% ;
+	}
+	
+	svg[data-toggle=tooltip] {
+		width: 50px;
+		height: 50px;
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	.modal-body{
+		display: block;
+	}
+	.profile-pic {
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		margin-bottom: 20px;
+	}
+}
+@media only screen and (min-width: 992px) {
+	.modal-body {
+		display: flex;
+	}
+}
+
+@media only screen and (min-width: 651px) {
+  .poster-sm {
+    display: none;
+   }
+
+	#mcontent {
+		display: flex;
+		flex-wrap: nowrap;
+	}
+
+	#loader {
+		display: none;
+		position: fixed;
+		z-index: 100;
+		left: 0;
+		top:0;
+		width: 100%;
+		height: 100%;
+		background-image: url("../static/loading.gif");
+		background-size: 20%;
+		background-position: 50% 50%;
+		background-color: #E93978;
+		background-repeat: no-repeat;
+		-webkit-transition: background-image 0.3s ease-in-out;
+		transition: background-image 0.2s ease-in-out;
+	}
+
+	#loader-text {
+		vertical-align: middle;
+		color:white;
+	}
+
+}
+
+.poster{
+    -webkit-box-shadow: 0px 1px 10px 4px rgba(250,250,250,1);
+    -moz-box-shadow: 0px 1px 10px 4px rgba(250,250,250,1);
+    box-shadow: 0px 1px 10px 4px rgba(250,250,250,1);
+	border: 8px solid #e4e0e0;
+}
+
+.card:hover {
+	cursor: pointer;
+}
+
+.castcard:hover {
+    cursor: pointer;
+}
+
+.cast-img {
+	border: 8px solid #e4e0e0;
+	filter: brightness(100%);
+	-moz-transition: all 0.75s ease;
+    -webkit-transition: all 0.75s ease;
+	transition: all 0.75s ease;
+}
+
+
+.cast-img:hover {
+	filter: brightness(50%);
+	-moz-transition: all 0.75s ease;
+    -webkit-transition: all 0.75s ease;
+    transition: all 0.75s ease;
+}
+
+.fig {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	backdrop-filter: brightness(100%);
+	position: absolute;
+	bottom: 0px;
+	top: 0px;
+	right: 0px;
+	left: 0px;
+	opacity: 0;
+	-moz-transition: all 0.75s ease;
+    -webkit-transition: all 0.75s ease;
+    transition: all 0.75s ease;
+}
+
+.fig:hover {
+	opacity: 1;
+	backdrop-filter:br;
+	-moz-transition: all 0.75s ease;
+    -webkit-transition: all 0.75s ease;
+    transition: all 0.75s ease;
+}
+
+.card-btn {
+	border-width: 5px;
+	border-radius: 10px;
+	background-color: coral;
+}
+
+.imghvr {
+	position: relative;
+}
+
+.table td {
+    border-color: rgb(215, 216, 171);
+    border-style:solid; 
+    border-width:5px;
+}
+
+.fail {
+	display: none;
+	color: white;
+}
+
+.rectangle {
+	display: inline-block;
+	width: 1000px;
+	height: 500px;
+	background-color: rgb(152, 176, 218);
+	opacity: 80%;
+	padding: 30px;
+	border-radius: 30px;
+  }
